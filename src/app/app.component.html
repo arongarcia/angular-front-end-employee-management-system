@@ -1,0 +1,26 @@
+<!-- Interpolaiton in Angular {{}}-->
+
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+   <ul class="navbar-nav">
+      <li class="navbar-item">
+         <a routerLink="employees" rounterLinkActive="active" class="nav-link">Employee List</a>
+      </li>
+      <li class="navbar-item">
+         <a routerLink="create-employee" rounterLinkActive="active" class="nav-link">Add Employee</a>
+      </li>
+   </ul>
+</nav>
+
+ <h1 class="text-center">{{title}}</h1>
+ <div class="container">
+    <!-- <app-employee-list></app-employee-list> -->
+
+    <router-outlet></router-outlet>
+ </div>
+
+ <footer class="footer">
+   <div class="container">
+      <span>All Right Reserve 2020 Java</span>
+   </div>
+ </footer>
